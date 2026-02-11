@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload and Management</title>
+</head>
+<body>
+    <h1>PDF Upload and Management Interface</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="pdfUpload">Upload PDF:</label>
+        <input type="file" id="pdfUpload" name="pdfUpload" accept="application/pdf" required>
+        <button type="submit">Upload</button>
+    </form>
+    <h2>Uploaded PDF Files</h2>
+    <ul id="pdfList">
+        <!-- List of uploaded PDFs will be displayed here -->
+    </ul>
+</body>
+</html>
